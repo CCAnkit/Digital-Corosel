@@ -16,7 +16,7 @@ const transporter = nodemailer.createTransport({
     port: 465,               // true for 465, false for other ports
     host: "smtp.gmail.com",
     auth: {
-            user: 'agupta@gmail.com',
+            user: 'ankitgupta@gmail.com',
             pass: 'password',
     },
   secure: true,
@@ -80,9 +80,9 @@ const createform = async (req, res) => {
 
     // mail data
     const mailData = {
-        from: 'ankitgupta9828@gmail.com',  // sender address
-        to: 'agupta9009@gmail.com',   // list of receivers   hiring@digitalcorsel.com
-        // cc:  'email',
+        from: 'ankitgupta@gmail.com',  // sender address
+        to: 'hiring@digitalcorsel.com',   // list of receivers   
+        cc:  'email',
         subject: subject,
         text: message,
         html: 'Mail sent successfully',
